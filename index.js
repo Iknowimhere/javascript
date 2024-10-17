@@ -138,10 +138,203 @@
 // }
 // console.log('please enter a valid number');
 
-let a=999n;
-console.log(a);
-console.log(Number(a));
+// let a=999n;
+// console.log(a);
+// console.log(Number(a));
+
+//boolean conversion
+
+// let a=0;
+// let b=Boolean(a)
+// console.log(b);
+
+// let a='hello'
+// let b=Boolean(a)
+// console.log(b);
+
+
+// let a=0n;
+// let b=Boolean(a)
+// console.log(b);
+
+// let a=null
+// let b=Boolean(a)
+// console.log(b);
+
+// let a=undefined
+// let b=Boolean(a)
+// console.log(b);
+
+// console.log(null==undefined);
+
+// let a=Symbol('');
+// let b=Boolean(a)
+// console.log(b);
+
+
+//operators
+//arithmetic operators + - * / % **
+//logical operators && || !
+//comparison operators > < >= <= != === !== ==
+//assignment operators += -= *= /= %= =
+//bitwise operators & | ^ ~ << >> >>>
+//ternary operators ? :
+//unary operators typeof ++ -- - + delete
+
+// let a=1+3/2*4;   //order of precedence
+// console.log(a);//left associativity rule
+
+// let b=2**3;
+// console.log(b);
+
+// let a=4/3;
+// let b=4%3;
+// console.log(a);
+// console.log(b);
+
+// let a=5>3 && 2<3;
+//falsy values
+// let a="hello" && 5>3 && "0";
+// console.log(a); //0 in a string
+
+//truthy values
+// let a="" || "" ||null;
+// console.log(a);
+
+//not operator
+// let a=!true;
+// console.log(a);
+
+//data in boolean
+// let a="hello";
+// let b="";
+// console.log(!!a);
+// console.log(!!b);
+
+
+// let a='5'
+// let b=5;
+// console.log(a==b);  //true
+// console.log(a===b);  //false
+
+// let a=3
+// let b=5;
+// console.log(a!=b); 
+// console.log(a!==b);
+
+
+// let price=100;
+// let gst=0.18
+// // price = price + (price * gst);
+// price += price * gst;
+// console.log(price);
+
+//ternary operator
+// let a=5<3 ? 'hello' : 'bye';
+// console.log(a);
+
+
+// let a='3';
+// let b=Number(a);
+// console.log(typeof +a);
+
+// let b="hello"
+// let c="world"
+// console.log(b+c);
+
+// let a='3'
+// let b='5'
+// console.log(a+b);
+// console.log(a-b);
+// console.log(a*b);
+
+
+// let a=3+5+'2'  //plus operator concatenates the strings
+// console.log(a);
+
+
+// let a=5;
+// a++;
+// console.log(a);
+
+// let a=5;
+// a--;
+// console.log(a);
+
+
+//conditional statements
+//if else
+//if else else if
+//switch
+
+// if(0){
+//     console.log('hello');
+// }else if(0){
+//     console.log('bye1');
+// }else{
+//     console.log('bye2');
+// }
+
+// switch("monday"){
+//     case "monday":
+//         console.log('hello');
+//         break;
+//     case "tuesday":
+//         console.log('bye');
+//         break;
+//     default:
+//         console.log('default');
+// }
+
+
+//loop statements
+//for  -- no of iterations is known
+//while --- no of iterations is unknown
+//do while ---  no of iterations is unknown but executes at least one time
 
 
 
+// for(let i=0;i<10;i++){
+//     console.log(i);
+// }
 
+// while(true){
+//     console.log('hello');
+// }
+
+// let i=0;
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
+
+// let i=0;
+// do{
+//     console.log(i);
+//     i++;
+// }while(i>10);
+
+//functions--objects
+//it a block of code can be excuted multiple times it reduces code redundancy
+
+//function declaration
+//functional expression
+//anonymous function
+//arrow function
+//higher order function
+//callback function
+//first class function
+//IIFE-immediately invoked function expression
+
+
+
+// function add(a,b){
+//     return a+b;
+// }
+// console.log(add(5,3));
+
+//default parameters
+// function add(a=1,b=2){
+//     return a+b;
+// }
+// console.log(add());
