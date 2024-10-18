@@ -317,24 +317,3 @@
 //functions--objects
 //it a block of code can be excuted multiple times it reduces code redundancy
 
-//function declaration
-//functional expression
-//anonymous function
-//arrow function
-//higher order function
-//callback function
-//first class function
-//IIFE-immediately invoked function expression
-
-
-
-// function add(a,b){
-//     return a+b;
-// }
-// console.log(add(5,3));
-
-//default parameters
-// function add(a=1,b=2){
-//     return a+b;
-// }
-// console.log(add());
