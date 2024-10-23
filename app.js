@@ -4,7 +4,10 @@
 //arrow function
 //higher order function
 //callback function
-//first class function
+//first class function(function treated just like a variable 
+// 1.passing a function as an argument to another function (callback function)
+// 2.function returns another function 
+// 3.anonoymous function is passed as a value to a variable in a functional expression setup)
 //IIFE-immediately invoked function expression
 
 
@@ -83,12 +86,85 @@
 
 //iife-function wrapped inside a paranthesis it provides a private scope and it doesn't pollute global namespace
 
-(function(greet){
-    let superhero=greet+" batman"
-    console.log(superhero);
-})("morning");
+// (function(greet){
+//     let superhero=greet+" batman"
+//     console.log(superhero);
+// })("morning");
 
-(function(){
-    let superhero="superman"
-    console.log(superhero);
-})();
+// (function(){
+//     let superhero="superman"
+//     console.log(superhero);
+// })();
+
+
+// //scopes 
+// var a=10;  //global scope
+// let a=10;  //global scope
+// const a=10;  //global scope
+// function add(){
+//     // var a=12; //local scope
+//     // let a=12; //local scope
+//     // const a=12; //local scope
+//     console.log(a+2);
+// }
+// add();
+// local scoped variables can be accessed inside the function and it shadows the global scoped variables if the variable names are same
+
+//
+// console.log("start");
+// function hof(){
+//     let a=3;
+//     console.log(a);
+//     return function(){
+//         let b=2;
+//         console.log(a+b);
+//     }
+// }
+// hof()()
+
+// let a=2;
+// let b=3;
+// console.log(a+b); //5
+// function add(){
+//     let c=5
+//     console.log(a+b+c); //10
+// }
+// add()
+
+// console.log(this);
+// function add(){
+//     console.log(this);
+//     return function(){
+//         console.log(this);
+//     }
+// }
+// add()()
+
+// console.log(typeof add);
+
+//hoisting in a variable declaration setup 
+//varible declaration will be moved to the top of the scope
+//var variable will be hoisted with undefined value
+//let and const variables will be hoisted but they will not be initialized with any value
+//accessing let and const variables before declaration will result in a reference error
+
+//hoisting in a function setup
+
+//function declaration will be moved to the top of the scope
+//function declaration will be hoisted with the function definition
+
+
+
+// add()
+// function add(){
+    //     var a=10;
+    //     console.log(a);
+    // }
+
+
+//functional expression will not be hoisted with the function definition
+
+    // a()
+    // let a=()=>{
+    //     console.log("hello");
+    // }
