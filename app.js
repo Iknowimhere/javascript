@@ -4,13 +4,11 @@
 //arrow function
 //higher order function
 //callback function
-//first class function(function treated just like a variable 
+//first class function(function treated just like a variable
 // 1.passing a function as an argument to another function (callback function)
-// 2.function returns another function 
+// 2.function returns another function
 // 3.anonoymous function is passed as a value to a variable in a functional expression setup)
 //IIFE-immediately invoked function expression
-
-
 
 // function add(a,b){
 //     return a+b;
@@ -33,7 +31,7 @@
 // let b=a(3,4)
 // console.log(b);
 
-//arrow function is also anonymous but arrow syntax instead of function keyword 
+//arrow function is also anonymous but arrow syntax instead of function keyword
 // let add=(a,b)=>{
 //     return a+b;
 // }
@@ -49,7 +47,6 @@
 
 // let demo=_=>console.log("hello");
 // demo();
-
 
 //higher order function-accepts another function as argument and can return another function
 // function hof(a,b,task){
@@ -70,7 +67,7 @@
 //     console.log(c+d);
 // })
 
-//function returns another function--hof 
+//function returns another function--hof
 
 // function hof(){
 //     let a=3;
@@ -96,8 +93,7 @@
 //     console.log(superhero);
 // })();
 
-
-// //scopes 
+// //scopes
 // var a=10;  //global scope
 // let a=10;  //global scope
 // const a=10;  //global scope
@@ -142,8 +138,8 @@
 
 // console.log(typeof add);
 
-//hoisting in a variable declaration setup 
-//varible declaration will be moved to the top of the scope
+//hoisting in a variable declaration setup
+//variable declaration will be moved to the top of the scope
 //var variable will be hoisted with undefined value
 //let and const variables will be hoisted but they will not be initialized with any value
 //accessing let and const variables before declaration will result in a reference error
@@ -153,18 +149,15 @@
 //function declaration will be moved to the top of the scope
 //function declaration will be hoisted with the function definition
 
-
-
 // add()
 // function add(){
-    //     var a=10;
-    //     console.log(a);
-    // }
-
+//     var a=10;
+//     console.log(a);
+// }
 
 //functional expression will not be hoisted with the function definition
 
-    // a()
-    // let a=()=>{
-    //     console.log("hello");
-    // }
+// a();
+// var a = () => {
+//   console.log("hello");
+// };
