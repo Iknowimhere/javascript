@@ -87,7 +87,116 @@
 // obj.name = "sai";
 // console.log(obj);
 
-//Object constructor function
+//Object-- Constructor function--template to create multiple objects of same kind
 //constructor--initializes the properties in an object
 
-function Person() {}
+//this is not the syntax of javascript
+// class Person{
+//     String name;
+//     int age;
+//     Person(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+// }
+// Person ramesh=new Person("ramesh",25)
+
+
+// function Person(name,age) {
+//     this.name=name;
+//     this.age=age;
+// }
+
+// let person1=new Person("Tony",25)
+// let person2=new Person("Stark",26)
+// console.log(person1);
+// console.log(person2);
+
+
+//invoking constructor function with a new keyword a empty object of will be created
+// {}
+//this---->{}
+//this.name
+//this.age
+//return this
+
+
+//class
+
+// class Person{
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+// }
+
+// let person1=new Person("Tony",25)
+// let person2=new Person("Stark",26)
+
+// console.log(person1);
+// console.log(person2);
+
+//cloning
+
+// let a={
+//     name:"akash",
+//     age:12
+// }
+//copy
+// let b=a;
+// console.log("a before",a);
+// b.name="bhoomi"
+// console.log("a after",a);
+
+
+// console.log(a===b);
+// console.log(a==b);
+
+//rest and spread operator
+
+// function details(name,age,...otherDetails){
+//     console.log(name);
+//     console.log(age);
+//     console.log(otherDetails);
+// }
+// details("akash",22,["html","css"],"bangalore",{canVote:true})
+
+//shallow copy
+// let c={...a};
+// console.log("a before",a);
+// c.name="chethan"
+// console.log("a after",a);
+
+// let a={
+//     name:"akash",
+//     age:12,
+//     address:{
+//         city:"bengaluru",
+//         pin:560061
+//     }
+// }
+// let b={...a}  //shallow copy
+
+// let b=structuredClone(a); //deep copy
+// let b=JSON.parse(JSON.stringify(a)) //deep copy
+//recursively copy object--deep copy
+
+// b.name="chethan"
+// b.address.city="hyderabad"
+// console.log("a after",a);
+
+
+//shallow copy copies on top level retaining same memory location of the nested objects
+//deep copy copies on deep level creating entrirely different memory location for nested objects too
+
+//prototypes are objects
+// Every object in JavaScript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
+// let obj={
+//     name:"tony",
+//     age:25
+// }
+
+// console.log(obj.address);
+
+// let arr=[1,2,3,4,5]
+// console.log(arr);
