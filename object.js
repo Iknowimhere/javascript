@@ -191,12 +191,114 @@
 
 //prototypes are objects
 // Every object in JavaScript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
-// let obj={
+// let obj1={
 //     name:"tony",
 //     age:25
 // }
+// let obj2={
+//     address:"bangalore",
+//     pin:560061,
+//     // __proto__:obj1(deprecated)
+// }
 
-// console.log(obj.address);
+// console.log(obj1);
 
-// let arr=[1,2,3,4,5]
+// Object.setPrototypeOf(obj2,obj1)
+
+// console.log(obj1.isPrototypeOf(obj2))
+
+// let res=Object.hasOwn(obj2,"name")
+// console.log(res);
+
+// let a={
+//     name:"umashankar",
+//     age:12
+// }
+// console.log(typeof a);
+
+// a.name=null
+// console.log(a);
+// console.log(Object.keys(a));
+// console.log(Object.values(a));
+// console.log(Object.entries(a));
+
+
+//object in default can be modified, but with constructor methods like freeze,seal and preventExtensions we can protect the object
+
+// Object.freeze(a)
+// Object.seal(a)
+// Object.preventExtensions(a)
+
+// a.address="bangalore"
+// console.log(a);
+
+// console.log(a.name);
+
+// a.age=18
+// console.log(a);
+
+// delete a.name
+// console.log(a);
+
+// console.log(Object.isFrozen(a))
+// console.log(Object.isSealed(a))
+// console.log(Object.isExtensible(a));
+
+
+// let b=Object.create(a)  //to create an object by setting an object as prototype or null
+// console.log(b);
+// console.log(b.name);
+// let c={
+//     address:"bangalore"
+// }
+// let d={
+//     pin:560061
+// }
+// Object.assign(a,c,d)
+// console.log(a);
+
+
+
+
+//Array--collection of similar data types(homogenous)
+
+// let arr=[1,3,4,4]
 // console.log(arr);
+
+// let arr=new Array(7)
+// console.log(arr);
+
+//array homogenous and heterogenous
+
+let arr=["hello",1,2,{name:"sfds"},function(){}]
+// console.log(arr[0]);
+
+let obj1={
+    name:"tony",
+    age:25
+}
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }// cant use on objects
+
+// for(let key in obj1){
+//     console.log(obj1[key]);
+// }
+// for(let idx in arr){
+//     console.log(arr[idx]);
+// }
+
+// for(let something of obj1){
+//     console.log(something);
+// }// cant use on objects
+
+// for(let val of arr){
+//     console.log(val);
+// }
+
+
+arr.forEach(function(value,index,arr){
+    console.log(value);
+})
+
+//for forof forin forEach while dowhile
