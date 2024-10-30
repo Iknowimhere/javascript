@@ -270,13 +270,13 @@
 
 //array homogenous and heterogenous
 
-let arr=["hello",1,2,{name:"sfds"},function(){}]
+// let arr=["hello",1,2,{name:"sfds"},function(){}]
 // console.log(arr[0]);
 
-let obj1={
-    name:"tony",
-    age:25
-}
+// let obj1={
+//     name:"tony",
+//     age:25
+// }
 // for(let i=0;i<arr.length;i++){
 //     console.log(arr[i]);
 // }// cant use on objects
@@ -297,8 +297,9 @@ let obj1={
 // }
 
 
-arr.forEach(function(value,index,arr){
-    console.log(value);
-})
+// arr.forEach(function(value,index,arr){
+//     console.log(value);
+// })
 
 //for forof forin forEach while dowhile
+
