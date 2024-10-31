@@ -101,27 +101,102 @@
 
 //find 
 
-let products=[
-    {id:1,name:"mobile",price:10000},
-    {id:2,name:"laptop",price:50000},
-    {id:3,name:"headphones",price:1000},
-    {id:4,name:"charger",price:1000},
-    {id:5,name:"earphones",price:1000},
-    {id:6,name:"watch",price:1000},
-    {id:7,name:"watch",price:1000},
-    {id:8,name:"watch",price:1000},
-    {id:9,name:"watch",price:1000},
-    {id:10,name:"watch",price:2000}
-]
+// let products=[
+//     {id:1,name:"mobile",price:10000},
+//     {id:2,name:"laptop",price:50000},
+//     {id:3,name:"headphones",price:1000},
+//     {id:4,name:"charger",price:1000},
+//     {id:5,name:"earphones",price:1000},
+//     {id:6,name:"watch",price:1000},
+//     {id:7,name:"watch",price:1000},
+//     {id:8,name:"watch",price:1000},
+//     {id:9,name:"watch",price:1000},
+//     {id:10,name:"watch",price:2000}
+// ]
 
-let result=products.find((item)=>{
-    return item.name==="laptop"
-})
-console.log(result);
+// let result=products.find((item)=>{
+//     return item.name==="laptop"
+// })
+// console.log(result);
 
 //findIndex
 //findLast
 //findLastIndex
+
+//string methods
 //search
 //match
 //replace
+
+
+//filter map and reduce
+// let cart=[4000,5000,2000,3000,1000]
+
+// let filteredCart=cart.filter((val)=>{
+//     return val<5000
+// })
+// console.log(filteredCart);
+
+
+// let gstMappedCart=filteredCart.map((val)=>{
+//     return val+(val*(18/100))
+// })
+// console.log(gstMappedCart);
+
+// let total=gstMappedCart.reduce((acc,val)=>{
+//     return acc+val
+// },-2000)
+// console.log(total);
+
+//some and every
+// let cart=[4000,5000,2000,3000,1000,6000]
+
+// let result=cart.some((val)=>{
+//     return val>5000
+// })
+// console.log(result);
+
+// let result2=cart.every((val)=>{
+//     return val>5000
+// })
+// console.log(result2);
+
+
+// let string="hello world";
+// console.log(string.split("").reverse().join(""));
+
+
+//set and map
+
+// let arr=[1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]
+
+// let set=new Set(arr);
+// console.log(set.size);
+// set.add(11)
+// console.log(set);
+// console.log(set.has(11));
+// set.delete(11)
+// console.log(set);
+// set.clear()
+// console.log(set);
+
+// let map=new Map();
+// map.set("name","zakir");
+// map.set("age",25);
+// map.set("gender","male");
+// console.log(map);
+
+// console.log(map.get("name"));
+// console.log(map.has("name"));
+// map.delete("name")
+// console.log(map.size);
+
+// console.log(map);
+// map.clear()
+// console.log(map);
+
+
+
+
+
+
