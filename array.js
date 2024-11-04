@@ -11,13 +11,11 @@
 // console.log(arr instanceof Array); //true
 // console.log(obj instanceof Array); //false
 
-
 // console.log(arr);
 // let arr=[1,2,3,4,5]
 
 // console.log(arr.pop());  //removes last element
 // console.log(arr); //it mutates origianl array
-
 
 // console.log(arr.push("hello",5,4)); //pushes elements to the last index and returns length of a new array
 // console.log(arr);  //mutates original array
@@ -28,7 +26,6 @@
 // console.log(arr.unshift(1,2,3,4));//inserts elements to the first index and returns length of a new array
 // console.log(arr);//mutates original array
 
-
 // console.log(arr.slice(0,2));//slices array till 2 position but it is exclusive of 2 element
 // console.log(arr.slice(2));
 
@@ -37,7 +34,7 @@
 //negetive index
 // let arr=[1,2,3,4,5]
 // console.log(arr.slice(-4,-2));
-// console.log(arr); 
+// console.log(arr);
 //slice doesnt mutate original array
 
 //splice
@@ -56,11 +53,11 @@
 //search methods
 // let arr=[1,2,"hello",3,4,3,"hello",5,]
 // console.log(arr.indexOf("hello")); //2
-// console.log(arr.indexOf("hello",3)); //6 
+// console.log(arr.indexOf("hello",3)); //6
 //indexof returns -1 if element is not found
 //indeof retuns the position of first occurence of element in the array and search starts from the specified index if search index is not specified it starts from 0
 
-// console.log(arr.lastIndexOf("hello")); //6 
+// console.log(arr.lastIndexOf("hello")); //6
 
 // console.log(arr.toString());
 
@@ -74,11 +71,10 @@
 
 // console.log(arr.at(2)); //returns  element at specified index can take negetive index
 
-//sort 
+//sort
 // let arr=[1,2,101,3,301,4,5]
 // let names=["zakir","akash","gautham"]
 // console.log(names.sort());  //lexicographic sort
-
 
 // let arr=[1,101,2,201,301,4,5]
 //[1,101,2,201,301,4,5]--ist iteration
@@ -90,7 +86,6 @@
 //[1,2,4,5,101,201,301]--7th iteration
 //internal merge sort
 
-
 //comapre function as callback function
 // arr.sort((a,b)=>{
 //     // return b-a; //descending order
@@ -99,7 +94,7 @@
 
 // console.log(arr);
 
-//find 
+//find
 
 // let products=[
 //     {id:1,name:"mobile",price:10000},
@@ -128,7 +123,6 @@
 //match
 //replace
 
-
 //filter map and reduce
 // let cart=[4000,5000,2000,3000,1000]
 
@@ -136,7 +130,6 @@
 //     return val<5000
 // })
 // console.log(filteredCart);
-
 
 // let gstMappedCart=filteredCart.map((val)=>{
 //     return val+(val*(18/100))
@@ -161,10 +154,8 @@
 // })
 // console.log(result2);
 
-
 // let string="hello world";
 // console.log(string.split("").reverse().join(""));
-
 
 //set and map
 
@@ -195,8 +186,30 @@
 // map.clear()
 // console.log(map);
 
+//rest---function setup---storing rest of the values
 
+// function details(name, age, place, ...restOfTheDetails) {
+//   console.log(name);
+//   console.log(age);
+//   console.log(place);
+//   console.log(restOfTheDetails);
+// }
+// details("tony", 23, "bangalore", "560061", "O+", ["html", "css"]);
 
+//spread---unpacking the values
 
+// let a = {
+//   name: "tony",
+//   age: 20,
+// };
+// let b = a;
+// let b = { address: "bangalore", pin: 560062 };
+// console.log({ ...b, ...a });
+// console.log(b);
+
+// let c = [1, 2, 4, 4, 5, 6];
+// let d = [3, 4, 5, 5, 6, 6];
+
+// console.log([...c, ...d]);
 
 

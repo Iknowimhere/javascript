@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: rgb(39, 38, 38);
+            font-family: "Poppins", sans-serif;
+            color: white;
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            border: 1px solid white;
+            width: 350px;
+            /* margin: 0 auto; */
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container ul {
+            list-style: none;
+            padding: 1em;
+        }
+
+        ul .list-items {
+            padding: 1em;
+            background-color: white;
+            color: rgb(39, 38, 38);
+            margin: 0.25em;
+            border-radius: 0.5em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="title">Fav movies</h1>
+        <ul>
+            <li class="list-items">Batman</li>
+            <li class="list-items">KGF</li>
+            <li class="list-items">Wild Robot</li>
+            <li class="list-items">Wall e</li>
+        </ul>
+    </div>
+
+    <script src="./dom.js"></script>
+</body>
+
+</html>
