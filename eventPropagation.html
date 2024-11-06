@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        background-color: rgb(39, 38, 38);
+        font-family: "Poppins", sans-serif;
+        color: white;
+        display: grid;
+        place-items: center;
+      }
+
+      .grandparent {
+        border: 1px solid white;
+        max-width: 650px;
+        text-align: center;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        cursor: pointer;
+      }
+      .grandparent div {
+        padding: 2em;
+        border: 1px solid white;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        cursor: pointer;
+      }
+      .grandparent div button {
+        padding: 1em;
+        border: 1px solid white;
+        background-color: white;
+        color: rgb(39, 38, 38);
+        border-radius: 0.5em;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grandparent">
+        grandparent
+      <div class="parent">
+        parent
+        <button type="submit" class="child">Child</button>
+      </div>
+    </div>
+
+    <script src="./eventPropagation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        background-color: rgb(39, 38, 38);
+        font-family: "Poppins", sans-serif;
+        color: white;
+        display: grid;
+        place-items: center;
+      }
+
+      .container {
+        border: 1px solid white;
+        max-width: 650px;
+        text-align: center;
+        padding: 2em;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+      }
+      .container div {
+        padding: 2em;
+        border: 1px solid white;
+        /* text-align: center; */
+      }
+      .container div button {
+        padding: 1em;
+        border: 1px solid white;
+        background-color: white;
+        color: rgb(39, 38, 38);
+        border-radius: 0.5em;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="example1">
+        <button type="submit" onclick="alert('hello this is example one')">Example 1</button>
+      </div>
+      <div class="example2">
+        <button type="submit">Example 2</button>
+      </div>
+      <div class="example3">
+        <button type="submit">Example 3</button>
+      </div>
+    </div>
+
+    <script src="./events.js"></script>
+  </body>
+</html>

@@ -82,7 +82,7 @@
 
 // let h1 = document.getElementById("title");
 // h1.setAttribute("class", "align-center");
-// console.log(h1.id);
+// console.log(h1.title);
 
 // console.log(h1.className);
 
@@ -144,7 +144,7 @@
 // ul.appendChild(li1);
 
 // ul.append(li1, li2);
-// ul.appendChild("text");
+// ul.appendChild("text"); //doesnt work
 // ul.appendChild(li1,li2)
 
 // li1.classList.add("list-items");
@@ -152,7 +152,7 @@
 
 //how to remove an element
 
-const ul = document.querySelector("ul");
-const li = document.querySelector("ul li");
-ul.remove(); //removes target element
+// const ul = document.querySelector("ul");
+// const li = document.querySelector("ul li");
+// ul.remove(); //removes target element
 // ul.removeChild(li); //this removes child
