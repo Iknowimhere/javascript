@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 450px;
+    background-color:#AE445A;
+    margin: 0 auto;
+    margin-top: 20vh;
+    padding: 1.5em;
+    color: white;
+    border-radius: 1em;
+}
+.container .accordion{
+    padding: 1em;
+}
+.container .accordion .header{
+    font-size: xx-large;
+    padding: 0.25em;
+    border-bottom:1px solid#E8BCB9 ;
+}
+.header:hover{
+    cursor: pointer;
+    background-color: #914957;
+}
+.accordion .content{
+    line-height: 1.1em;
+    text-align: justify;
+    padding: 0.25em;
+    display: none;
+}

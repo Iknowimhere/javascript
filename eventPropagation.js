@@ -29,6 +29,7 @@ child.addEventListener("click", ()=> {
     console.log("child clicked");
 },true);
 
+
 document.addEventListener("click", ()=> {
     console.log("document clicked");
 });
